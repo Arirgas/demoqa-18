@@ -29,8 +29,7 @@ public class automationPracticeForm {
         $(byText("Male")).click();
         $("#userNumber").setValue("9999999999");
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").click();
-        $(byText("January")).click();
+        $(".react-datepicker__month-select").selectOption("June");
         $(".react-datepicker__year-select").click();
         $(byText("1999")).click();
         $(byText("28")).click();
@@ -47,7 +46,7 @@ public class automationPracticeForm {
 
 
         $("[class=table-responsive]").shouldHave(text("Aleksander Tumanov"), text("Tumanov@gmail.com"),
-                text("Male"), text("9999999999"), text("28 December,1998"), text("Sports, Reading, Music"),
+                text("Male"), text("9999999999"), text("28 June,1999"), text("Sports, Reading, Music"),
                 text("LUTZZZZ.png"), text("9999999991"),
                 text("NCR Delhi"));
 

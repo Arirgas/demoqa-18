@@ -33,6 +33,7 @@ public class automationPracticeForm {
         $(".react-datepicker__year-select").selectOption("1999");
         // $(byText("28")).click(); - bad variantK
         $(".react-datepicker__day--028:not(.react-datepicker__day--outside-month)").click(); // good variant
+        $("#subjectsInput").setValue("Maths").pressEnter();
         $(byText("Sports")).click();
         $(byText("Reading")).click();
         $(byText("Music")).click();
@@ -46,7 +47,7 @@ public class automationPracticeForm {
 
 
         $("[class=table-responsive]").shouldHave(text("Aleksander Tumanov"), text("Tumanov@gmail.com"),
-                text("Male"), text("9999999999"), text("28 June,1999"), text("Sports, Reading, Music"),
+                text("Male"), text("9999999999"), text("28 June,1999"), text("Maths"), text("Sports, Reading, Music"),
                 text("LUTZZZZ.png"), text("9999999991"),
                 text("NCR Delhi"));
 

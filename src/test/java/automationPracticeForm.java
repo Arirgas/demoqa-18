@@ -30,9 +30,9 @@ public class automationPracticeForm {
         $("#userNumber").setValue("9999999999");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("June");
-        $(".react-datepicker__year-select").click();
-        $(byText("1999")).click();
-        $(byText("28")).click();
+        $(".react-datepicker__year-select").selectOption("1999");
+        // $(byText("28")).click(); - bad variantK
+        $(".react-datepicker__day--028:not(.react-datepicker__day--outside-month)").click(); // good variant
         $(byText("Sports")).click();
         $(byText("Reading")).click();
         $(byText("Music")).click();

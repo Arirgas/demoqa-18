@@ -37,7 +37,7 @@ public class automationPracticeForm {
         $(byText("Sports")).click();
         $(byText("Reading")).click();
         $(byText("Music")).click();
-        $("#uploadPicture").uploadFile(new File("C:\\Users\\Alexander\\Desktop\\LUTZZZZ.png"));
+        $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#currentAddress").setValue("9999999991");
         $(byText("Select State")).click();
         $(byText("NCR")).click();
@@ -48,7 +48,7 @@ public class automationPracticeForm {
 
         $("[class=table-responsive]").shouldHave(text("Aleksander Tumanov"), text("Tumanov@gmail.com"),
                 text("Male"), text("9999999999"), text("28 June,1999"), text("Maths"), text("Sports, Reading, Music"),
-                text("LUTZZZZ.png"), text("9999999991"),
+                text("1.png"), text("9999999991"),
                 text("NCR Delhi"));
 
 
